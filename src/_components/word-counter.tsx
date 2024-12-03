@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, Fragment } from "react";
-import { AlertCircle, Check, Copy } from "lucide-react";
+import { Check, Copy } from "lucide-react";
 import locale from "~/utils/locale.json";
 import type LocaleStrings from "~/utils/types";
 import clsx from "clsx";

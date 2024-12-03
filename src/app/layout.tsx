@@ -4,8 +4,8 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSON Formatter",
-  description: "👤✏️ Andrés Movilla",
+  title: "Word Counter",
+  description: "👤✏️ Andrés Movilla ",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
