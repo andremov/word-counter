@@ -1,0 +1,28 @@
+{
+  "en": {
+    "title": "Word Counter",
+    "labels": {
+      "data": "Paste or type your text here...",
+      "input": "Input",
+      "chars": "characters",
+      "words": "words"
+    },
+    "buttons": {
+      "copy": "Copy",
+      "copied": "Copied!"
+    }
+  },
+  "es": {
+    "title": "Contador de Palabras",
+    "labels": {
+      "data": "Pega o escribe tu texto aquí...",
+      "input": "Entrada",
+      "chars": "caracteres",
+      "words": "palabras"
+    },
+    "buttons": {
+      "copy": "Copiar",
+      "copied": "Copiado!"
+    }
+  }
+}
