@@ -60,13 +60,13 @@ export default function WordCounter({ lang = "en" }: { lang?: "en" | "es" }) {
       <div className={clsx(["flex flex-1 gap-4"])}>
         <div className={clsx(["flex w-full flex-col gap-2"])}>
           <div className="flex h-10 items-center justify-between">
-            <h2 className="text-lg font-semibold">
+            <h2 className="text-lg font-semibold text-gray-200">
               {localeStrings.labels.input}
             </h2>
             <button
               onClick={handleCopy}
               className={clsx([
-                "flex items-center gap-2 rounded-md border border-gray-200 px-2 py-1 outline-none transition hover:bg-gray-200",
+                "flex items-center gap-2 rounded-md border border-gray-600 bg-gray-800 px-2 py-1 text-gray-200 outline-none transition hover:bg-gray-700",
                 {
                   "bg-green-600 text-white": isCopied,
                 },
@@ -89,9 +89,9 @@ export default function WordCounter({ lang = "en" }: { lang?: "en" | "es" }) {
             placeholder={localeStrings.labels.data}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="w-full flex-1 resize-none rounded-md border border-gray-200 p-4 outline-none transition focus:border-blue-400"
+            className="w-full flex-1 resize-none rounded-md border border-gray-600 bg-gray-800 p-4 text-gray-200 placeholder-gray-400 outline-none transition focus:border-blue-400"
           />
-          <div>
+          <div className="text-gray-300">
             {characterCount} {localeStrings.labels.chars}. {wordCount}{" "}
             {localeStrings.labels.words}.
           </div>
