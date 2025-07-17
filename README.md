@@ -1,19 +1,46 @@
-# Create T3 App
+# Word Counter
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A modern, offline-capable word counter application built with Next.js and the T3 Stack. Count words, characters, and paragraphs in real-time with support for multiple languages.
 
-## What's next? How do I make an app with this?
+## Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- Real-time word, character, and paragraph counting
+- Multi-language support (English and Spanish)
+- Offline functionality with PWA capabilities
+- Modern, responsive design with Tailwind CSS
+- Copy functionality for quick sharing
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Tech Stack
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+This project uses the [T3 Stack](https://create.t3.gg/) with:
+
+- [Next.js](https://nextjs.org) - React framework
+- [Tailwind CSS](https://tailwindcss.com) - Styling
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Lucide React](https://lucide.dev/) - Icon library
+
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Building for Production
+
+```bash
+npm run build
+npm start
+```
 
 ## Learn More
 

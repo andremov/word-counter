@@ -6,8 +6,9 @@ import ServiceWorkerRegistration from "~/_components/service-worker-registration
 import { type Metadata, type Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "Elemental Messages",
-  description: "👤✏️ Andrés Movilla",
+  title: "Word Counter",
+  description:
+    "Count words, characters, and paragraphs offline - by Andrés Movilla",
   icons: [
     { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
     { rel: "apple-touch-icon", url: "/favicon.svg" },
@@ -16,21 +17,21 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Elemental Messages",
+    title: "Word Counter",
   },
   formatDetection: {
     telephone: false,
   },
   openGraph: {
     type: "website",
-    siteName: "Elemental Messages",
-    title: "Elemental Messages",
-    description: "Translate text using periodic table elements",
+    siteName: "Word Counter",
+    title: "Word Counter",
+    description: "Count words, characters, and paragraphs offline",
   },
   twitter: {
     card: "summary",
-    title: "Elemental Messages",
-    description: "Translate text using periodic table elements",
+    title: "Word Counter",
+    description: "Count words, characters, and paragraphs offline",
   },
 };
 
@@ -50,7 +51,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#111827" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Elemental Messages" />
+        <meta name="apple-mobile-web-app-title" content="Word Counter" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-TileColor" content="#111827" />

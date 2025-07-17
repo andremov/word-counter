@@ -1,7 +1,7 @@
 {
-  "name": "JSON Formatter",
-  "short_name": "JSON Formatter",
-  "description": "Format and validate JSON data offline - by Andrés Movilla",
+  "name": "Word Counter",
+  "short_name": "Word Counter",
+  "description": "Count words, characters, and paragraphs offline - by Andrés Movilla",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#111827",
@@ -14,7 +14,7 @@
       "type": "image/svg+xml"
     }
   ],
-  "categories": ["utilities", "productivity", "developer"],
+  "categories": ["utilities", "productivity", "writing"],
   "screenshots": [],
   "lang": "en",
   "dir": "ltr"
