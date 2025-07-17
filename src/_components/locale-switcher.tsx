@@ -10,7 +10,10 @@ export default function LocaleSwitcher({
       <Link
         href={"/en"}
         className={
-          (lang === "en" ? "bg-gray-600 font-semibold text-white" : "text-gray-300 hover:bg-gray-700") + " px-3 py-1 transition-colors"
+          (lang === "en"
+            ? "bg-gray-600 font-semibold text-white"
+            : "text-gray-300 hover:bg-gray-700") +
+          " px-3 py-1 transition-colors"
         }
       >
         EN
@@ -19,7 +22,10 @@ export default function LocaleSwitcher({
       <Link
         href={"/es"}
         className={
-          (lang === "es" ? "bg-gray-600 font-semibold text-white" : "text-gray-300 hover:bg-gray-700") + " px-3 py-1 transition-colors"
+          (lang === "es"
+            ? "bg-gray-600 font-semibold text-white"
+            : "text-gray-300 hover:bg-gray-700") +
+          " px-3 py-1 transition-colors"
         }
       >
         ES

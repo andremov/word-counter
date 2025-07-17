@@ -57,8 +57,8 @@ export default function WordCounter({ lang = "en" }: { lang?: "en" | "es" }) {
     <div className="container mx-auto flex h-full flex-col">
       <Header lang={lang} />
 
-      <div className={clsx(["flex flex-1 gap-4"])}>
-        <div className={clsx(["flex w-full flex-col gap-2"])}>
+      <div className="flex flex-1 gap-4">
+        <div className="relative mx-auto flex w-full max-w-md flex-col gap-2 px-2">
           <div className="flex h-10 items-center justify-between">
             <h2 className="text-lg font-semibold text-gray-200">
               {localeStrings.labels.input}
@@ -85,16 +85,16 @@ export default function WordCounter({ lang = "en" }: { lang?: "en" | "es" }) {
               )}
             </button>
           </div>
+          <div className="absolute top-12 mx-[2px] w-[calc(100%-20px)] rounded-t-md bg-black/20 py-1 text-center text-sm text-gray-300">
+            {characterCount} {localeStrings.labels.chars}. {wordCount}{" "}
+            {localeStrings.labels.words}.
+          </div>
           <textarea
             placeholder={localeStrings.labels.data}
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="w-full flex-1 resize-none rounded-md border border-gray-600 bg-gray-800 p-4 text-gray-200 placeholder-gray-400 outline-none transition focus:border-blue-400"
+            className="w-full flex-1 resize-none rounded-md border border-gray-600 bg-gray-800 p-4 pt-10 text-gray-200 placeholder-gray-400 outline-none transition focus:border-blue-400"
           />
-          <div className="text-gray-300">
-            {characterCount} {localeStrings.labels.chars}. {wordCount}{" "}
-            {localeStrings.labels.words}.
-          </div>
         </div>
       </div>
     </div>
